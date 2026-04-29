@@ -3,11 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "scripts": {
+    "test": "pnpm exec tsx --test src/custom-fetch.test.ts"
+  },
   "exports": {
     ".": "./src/index.ts"
   },
   "dependencies": {
     "@tanstack/react-query": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "tsx": "catalog:"
   },
   "peerDependencies": {
     "react": ">=18"
